@@ -15,4 +15,9 @@ public class Contact
     [Required]
     public string phoneNumber { get; set; }
 
+    public override string ToString()
+    {
+        return $"{name} - {email}";
+    }
+
 }

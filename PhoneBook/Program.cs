@@ -2,6 +2,7 @@
 using PhoneBook;
 using Spectre.Console;
 
+namespace PhoneBook;
 partial class Program
 {
     enum Options
