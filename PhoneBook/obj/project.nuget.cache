@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GyKsRhmCB8o=",
+  "dgSpecHash": "u0k1hX5RhYo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\PhoneBook\\PhoneBook.csproj",
+  "projectFilePath": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\Phonebook\\PhoneBook.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shinu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\shinu\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",

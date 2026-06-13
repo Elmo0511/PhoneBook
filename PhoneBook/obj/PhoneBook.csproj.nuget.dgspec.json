@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\PhoneBook\\PhoneBook.csproj": {}
+    "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\Phonebook\\PhoneBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\PhoneBook\\PhoneBook.csproj": {
+    "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\Phonebook\\PhoneBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\PhoneBook\\PhoneBook.csproj",
+        "projectUniqueName": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\Phonebook\\PhoneBook.csproj",
         "projectName": "PhoneBook",
-        "projectPath": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\PhoneBook\\PhoneBook.csproj",
+        "projectPath": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\Phonebook\\PhoneBook.csproj",
         "packagesPath": "C:\\Users\\shinu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\PhoneBook\\obj\\",
+        "outputPath": "C:\\Users\\shinu\\Desktop\\esperimento\\PhoneBook\\Phonebook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shinu\\AppData\\Roaming\\NuGet\\NuGet.Config"
