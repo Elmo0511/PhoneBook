@@ -1,4 +1,5 @@
 using System;
+using Microsoft.EntityFrameworkCore.Update;
 using Spectre.Console;
 
 namespace PhoneBook;
@@ -47,9 +48,31 @@ public class ContactService
         Contact? contact = GetContactOption();
         if(contact != null)
         {
-            contact.name = AnsiConsole.Confirm("Update name?") ? AnsiConsole.Ask<string>("New Contact Name: ") : contact.name;
-            contact.email = AnsiConsole.Confirm("Update email?") ? AnsiConsole.Ask<string>("New Contact Email: ") : contact.email;
-            contact.phoneNumber = AnsiConsole.Confirm("Update phone number?") ? AnsiConsole.Ask<string>("New Contact Phone Number: ") : contact.phoneNumber;
+            string tmp;
+            if (AnsiConsole.Confirm("Update name?"))
+            {
+                do
+                {
+                    tmp = AnsiConsole.Ask<string>("New Contact Name:");
+                }while(!Validator.ValidateName(tmp));
+                contact.name = tmp;
+            }
+            if (AnsiConsole.Confirm("Update email?"))
+            {
+                do
+                {
+                    tmp = AnsiConsole.Ask<string>("New Contact Email:");
+                }while(!Validator.ValidateEmail(tmp));
+                contact.email = tmp;
+            }
+            if (AnsiConsole.Confirm("Update phone number?"))
+            {
+                do
+                {
+                    tmp = AnsiConsole.Ask<string>("New Contact Phone Number:");
+                }while(!Validator.ValidatePhoneNumber(tmp));
+                contact.phoneNumber = tmp;
+            }
             AnsiConsole.Markup("[green]Contact Updated[/]");
             Console.ReadKey();
             Console.Clear();
@@ -72,7 +95,7 @@ public class ContactService
         Name: {contact.name}
         Email: {contact.email}
         Phone Number: {contact.phoneNumber}");
-        panel.Header = new PanelHeader("[gree]Contact Info[7]");
+        panel.Header = new PanelHeader("[green]Contact Info[/]");
         AnsiConsole.Write(panel);
         Console.ReadKey();
         Console.Clear();
@@ -109,6 +132,7 @@ public class ContactService
         if (contacts == null || contacts.Count() == 0)
         {
             AnsiConsole.MarkupLine("[red]No contacts found![/]");
+            Console.ReadKey();
             return null;
         }
 
