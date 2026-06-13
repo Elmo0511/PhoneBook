@@ -10,8 +10,8 @@ using PhoneBook;
 namespace PhoneBook.Migrations
 {
     [DbContext(typeof(ContactsContext))]
-    [Migration("20260612204917_InitialCreateFix")]
-    partial class InitialCreateFix
+    [Migration("20260613144050_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

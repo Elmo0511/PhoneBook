@@ -24,7 +24,7 @@ public class ContactController
     }
 
 
-    public static List<Contact> GetContactList()
+    public static List<Contact>? GetContactList()
     {
         using var db = new ContactsContext();
 
@@ -37,5 +37,14 @@ public class ContactController
         using var db = new ContactsContext();
 
         return db.Contact.Where(c => c.contactId == id).FirstOrDefault();
+    }
+
+    public static void UpdateContact(Contact contact)
+    {
+        using var db = new ContactsContext();
+
+        db.Update(contact);
+
+        db.SaveChanges();
     }
 }

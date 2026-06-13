@@ -55,7 +55,8 @@ partial class Program
                     running = false;
                     break;
 
-            }            
+            }       
+            Console.Clear();     
         }
   
     }
